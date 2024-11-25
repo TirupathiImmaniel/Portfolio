@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immaniel's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="my.css">
+</head>
+<body>
+   <header id="header">
+    <h1 class="logo"><span style="color:red;">I</span>mmaniel.</h1>
+    <nav class="navbar">
+        <a id="homeButton" href="#Home">Home</a>
+        <a id = "aboutButton" href="#About">About</a>
+        <a id="projectsButton" href="#Projects">Projects</a>
+        <a id="contactButton" href="#Contact">Contact</a>
+    </nav>
+    <nav id="mobile-navbar" class="mobile-navbar">
+        <i id="menubar" class="fa-solid fa-bars" onclick="showMobile()"></i>
+        <i id="menubar2"></i>
+        <div class="mobile-view" id="mobile-view">
+            <a id="homeButton" href="#Home">Home</a>
+            <a id = "aboutButton" href="#About">About</a>
+            <a id="projectsButton" href="#Projects">Projects</a>
+            <a id="contactButton" href="#Contact">Contact</a>
+        </div>
+    </nav>
+   </header>
+<!--------------------Home section--------------------------------->
+   <section id="Home">
+    <div class="home-content">
+        <h1>Hi, I'm Immaniel <span style="color:red;font-family:sans-Serif;font-weight:bold;">Tirupathi</span></h1>
+        <h3>Full Stack Developer</h3>
+        <a href="Immaniel Resume.pdf" download><button class="resume-button">Resume</button></a>
+    </div>
+    <img class="home-image" src="photo2.jpg"/>
+   </section>
+<!-------------------About Section------------------------------------->
+   <section id="About">
+    <div>
+        <img class="about-image" src="photo1.jpg"/>
+    </div>
+    <div class="about-content">
+        <div>
+            <h1 class="about-heading">About Me</h1>
+            <p class="para">Hi, I'm Immaniel Tirupathi, a passionate and self-driven Full Stack Developer with a knack for building efficient and innovative solutions. Currently pursuing my Bachelor's degree, I specialize in crafting engaging web applications, building data analytics dashboards, and creating AI-powered tools.
+                With expertise in Web Development, I excel in both Frontend (HTML, CSS, JavaScript, Bootstrap) and Backend (Node.js, Express.js) technologies. My skill set also includes Python, SQL, and data visualization tools like PowerBI.
+            </p>
+        </div>
+        <div id="headings">
+            <h3 id = "educationHeading" onclick = "showEducation()">Education</h3>
+            <h3 id = "skillsHeading" onclick="showSkills()">Skills</h3>
+            <h3 id = "certificationsHeading" onclick="showCertifications()">Certifications</h3>
+        </div>
+        <br/>
+        <div id="education">
+            <h3 class="sub-heading">Bachelor of Technology in Electronics and Communication Engineering</h3>
+            <p>Audisankara Institute of Technology     (2022 - Present)</p>
+            <br/>
+            <h3 class="sub-heading">Intermediate (MPC)</h3>
+            <p>Narayana Junior College    (2020 - 2022)</p>
+            <br/>
+            <h3 class="sub-heading">SSC</h3>
+            <p>B.V.N.R.Z.P. High School   (2019 - 2020)</p>
+            <p>GPA: 10</p>
+        </div>
+        <div id="skills">
+            <h3 class="sub-heading">Programming Languages:</h3>
+            <ol class="list">
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+            </ol>
+            <br/>
+            <h3 class="sub-heading">Web Technologies:</h3>
+            <ol class="list">
+                <li class="item">HTML</li>
+                <li class="item">CSS</li>
+                <li class="item">Bootstrap</li>
+                <li class="item">JavaScript</li>
+                <li class="item">Node JS</li>
+                <li class="item">React JS</li>
+                <li class="item">Express JS</li>
+            </ol>
+            <br/>
+            <h3 class="sub-heading">Tools & Technologies:</h3>
+            <ol class="list">
+                <li class="item">Git</li>
+                <li class="item">Github</li>
+                <li class="item">MS Excel</li>
+                <li class="item">Power BI</li>
+                <li class="item">VS Code</li>
+            </ol>
+        </div>
+        <div id="certifications">
+            <ul>
+                <li>
+                    <h3 class="sub-heading">Hackathon: <span style="color:#fff;font-size:13px;">Led a team in a college hackathon, where we collaborated to develop innovative solutions under tight
+                        deadlines.</span></h3>
+                </li>
+                <li>
+                    <h3 class="sub-heading"><span style="color:#fff;font-size:13px;">Programming with Python By </span>Hackerrank</h3>
+                </li>
+                <li>
+                    <h3 class="sub-heading"><span style="color:#fff;font-size:13px;">JavaScript Essentials By </span>NxtWave</h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+   </section>
+<!---------------------Projects-------------------------->
+   <section id="Projects">
+    <h1 class="projects-heading">Latest <span style="color:aqua;">Projects</span></h1>
+    <div class="cards-container">
+        <a href="https://immaniel.ccbp.tech/">
+            <div class="card card1">
+                <img class="image" src="ai image.webp"/>
+                <h3 class="card-description">AI Chatbot</h3>
+            </div>
+        </a>
+        <a href="https://immanielt.ccbp.tech/">
+            <div class="card card1">
+                <img class="image" src="tourism.jpeg"/>
+                <h3 class="card-description">Tourism</h3>
+            </div>
+        </a>
+        <a href="https://immanielhotel.ccbp.tech/">
+            <div class="card card2">
+                <img class="image" src="Restaurant image.jpeg"/>
+                <h3 class="card-description">Restaurant</h3>
+            </div>
+        </a>
+        <a href="https://immaniellogin.ccbp.tech/">
+            <div class="card card3">
+                <img class="image" src="login.avif"/>
+                <h3 class="card-description">Login Page</h3>
+            </div>
+        </a>
+    </div>
+   </section>
+
+<!--------------------Contact----------------------------->
+   <section id="Contact">
+    <div class="contact-content">
+        <h1>Contact Me</h1>
+        <div class="top2" style="display:flex;margin-top:10px;">
+            <i class="fa-regular fa-envelope"></i>
+            <p>tirupathiimmaniel@gmail.com</p>
+        </div>
+        <div class="top2" style="display:flex;margin-top:10px;">
+            <i class="fa-solid fa-phone"></i>
+            <p>+91 6301055497</p>
+        </div>
+        <div class="logo-container">
+            <a href="https://www.facebook.com/immaniel.tirupati?mibextid=kFxxJD"><i class="fa-brands fa-facebook logos"></i></a>
+            <a href="https://x.com/ImmanielT?t=tTz8gM5GCslEsdDAQDmtKA&s=09"><i class="fa-brands fa-x-twitter logos"></i></a>
+            <a href="https://www.instagram.com/immaniel_immu/profilecard/?igsh=MWUxZjIzbWFlMjQweA=="><i class="fa-brands fa-instagram logos" href="#"></i></a>
+            <a href="https://youtube.com/@icube.telugu?si=qCMao-PnTT6hhRQY"><i class="fa-brands fa-youtube logos"></i></a>
+            <a href="https://www.linkedin.com/in/immaniel-tirupathi"><i class="fa-brands fa-linkedin logos"></i></a>
+        </div>
+        <a href="Immaniel Resume.pdf" download><button class="download">Download CV</button></a>
+    </div>
+    <form name="submit-to-google-sheet" class="message-content">
+        <input id="name" name="Name" class="inputs" type="text" placeholder="Your Name" required/>
+        <input id="email" name="Email" class="inputs" type="email" placeholder="Your Email" required/>
+        <textarea id="message" name="Message" class="message" placeholder="Your Message"></textarea>
+        <button class="download submit" type="submit" onclick="submitMessage()">Submit</button>
+    </form>
+   </section>
+
+
+    <script src="my.js"></script>
+</body>
+</html>
